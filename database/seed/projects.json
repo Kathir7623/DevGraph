@@ -1,0 +1,118 @@
+[
+  {
+    "id": "proj-kubernetes-dashboard",
+    "name": "Cloud Native Portal",
+    "description": "An interactive management dashboard for Kubernetes clusters running on multi-cloud environments.",
+    "status": "Active",
+    "repoUrl": "https://github.com/devgraph-org/cloud-portal",
+    "techStack": ["tech-typescript", "tech-react", "tech-go", "tech-k8s", "tech-docker", "tech-postgres"],
+    "contributors": [
+      { "devId": "dev-alice", "role": "Lead Architect" },
+      { "devId": "dev-bob", "role": "Senior UI Engineer" },
+      { "devId": "dev-elena", "role": "DevOps Engineer" },
+      { "devId": "dev-george", "role": "Backend Spring API Developer" },
+      { "devId": "dev-julia", "role": "UI Component Consultant" }
+    ]
+  },
+  {
+    "id": "proj-smart-analytics",
+    "name": "Intel-Graph Engine",
+    "description": "High-throughput analytics engine leveraging graph databases for fast relationship mapping and recommendation systems.",
+    "status": "Active",
+    "repoUrl": "https://github.com/devgraph-org/intel-graph",
+    "techStack": ["tech-python", "tech-cogodb", "tech-redis", "tech-postgres", "tech-docker"],
+    "contributors": [
+      { "devId": "dev-alice", "role": "Distributed Systems Advisor" },
+      { "devId": "dev-david", "role": "Lead Database Engineer" },
+      { "devId": "dev-chloe", "role": "Backend Engineer" },
+      { "devId": "dev-hannah", "role": "Data Pipeline Modeler" },
+      { "devId": "dev-lisa", "role": "Recommendation System Researcher" }
+    ]
+  },
+  {
+    "id": "proj-dev-network",
+    "name": "DevGraph Web App",
+    "description": "Visualizing social and skill graphs of developer teams to enable resource allocation and collaborative matching.",
+    "status": "Planning",
+    "repoUrl": "https://github.com/devgraph-org/dev-network",
+    "techStack": ["tech-react", "tech-typescript", "tech-nodejs", "tech-cogodb", "tech-aws"],
+    "contributors": [
+      { "devId": "dev-bob", "role": "Frontend Designer" },
+      { "devId": "dev-chloe", "role": "Backend API Developer" },
+      { "devId": "dev-david", "role": "Graph DB Modeler" },
+      { "devId": "dev-faisal", "role": "Junior Full Stack Engineer" },
+      { "devId": "dev-ian", "role": "Rust Performance Consultant" },
+      { "devId": "dev-julia", "role": "React Architecture Lead" }
+    ]
+  },
+  {
+    "id": "proj-secure-ci",
+    "name": "Sentinel Deploy",
+    "description": "Security-focused CI/CD pipeline automation framework with integrated vulnerability scanning for container images.",
+    "status": "Completed",
+    "repoUrl": "https://github.com/devgraph-org/sentinel-deploy",
+    "techStack": ["tech-go", "tech-rust", "tech-docker", "tech-aws"],
+    "contributors": [
+      { "devId": "dev-elena", "role": "CI/CD Architect" },
+      { "devId": "dev-alice", "role": "Security Systems Engineer" },
+      { "devId": "dev-kevin", "role": "Penetration Tester" },
+      { "devId": "dev-ian", "role": "Compiler Optimization Expert" }
+    ]
+  },
+  {
+    "id": "proj-realtime-metrics",
+    "name": "MetricStream Aggregator",
+    "description": "Real-time metrics aggregator collecting application trace latency and memory profiles across active nodes.",
+    "status": "Active",
+    "repoUrl": "https://github.com/devgraph-org/metric-stream",
+    "techStack": ["tech-typescript", "tech-nodejs", "tech-redis", "tech-postgres", "tech-aws"],
+    "contributors": [
+      { "devId": "dev-george", "role": "Backend Architect" },
+      { "devId": "dev-kevin", "role": "Compliance Officer" },
+      { "devId": "dev-lisa", "role": "Telemetry Modeling Engineer" },
+      { "devId": "dev-faisal", "role": "UI Integrator" }
+    ]
+  },
+  {
+    "id": "proj-payment-gateway",
+    "name": "UPI Payment Gateway",
+    "description": "Enterprise-grade UPI processing gateway with sub-millisecond transaction routing, distributed locks, and ledger integrations.",
+    "status": "Active",
+    "repoUrl": "https://github.com/devgraph-org/upi-gateway",
+    "techStack": ["tech-nodejs", "tech-postgres", "tech-redis", "tech-aws"],
+    "contributors": [
+      { "devId": "dev-pranav", "role": "Backend Lead" },
+      { "devId": "dev-george", "role": "Spring Security Expert" },
+      { "devId": "dev-manoj", "role": "PCI Compliance Officer" },
+      { "devId": "dev-sheetal", "role": "Frontend Merchant Integrator" }
+    ]
+  },
+  {
+    "id": "proj-smart-logistic",
+    "name": "LogiRoute Optimizer",
+    "description": "Dynamic route planning application resolving geographic delivery loops using Dijkstra path finding over CognoDB.",
+    "status": "Active",
+    "repoUrl": "https://github.com/devgraph-org/logiroute",
+    "techStack": ["tech-python", "tech-cogodb", "tech-redis", "tech-postgres"],
+    "contributors": [
+      { "devId": "dev-hannah", "role": "Database Designer" },
+      { "devId": "dev-lisa", "role": "ML Path Modeler" },
+      { "devId": "dev-oliver", "role": "QA Test Automator" },
+      { "devId": "dev-rupa", "role": "Analytics Dashboard Lead" }
+    ]
+  },
+  {
+    "id": "proj-data-pipeline",
+    "name": "Telemetry Stream Pipeline",
+    "description": "Asynchronous high-volume telemetry consumer ingest log streams and indexing properties into microservices.",
+    "status": "Planning",
+    "repoUrl": "https://github.com/devgraph-org/telemetry-stream",
+    "techStack": ["tech-go", "tech-rust", "tech-docker", "tech-k8s"],
+    "contributors": [
+      { "devId": "dev-alice", "role": "System Architect" },
+      { "devId": "dev-ian", "role": "Rust Optimizations" },
+      { "devId": "dev-elena", "role": "Orchestration Engineer" },
+      { "devId": "dev-manoj", "role": "Network Security Audits" }
+    ]
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "dev-alice",
+    "name": "Aarav Sharma",
+    "title": "Lead Software Architect",
+    "email": "aarav.sharma@devgraph.in",
+    "location": "Bengaluru, Karnataka",
+    "bio": "Distributed systems engineer and cloud architect based in India's Silicon Valley. Passionate about graph theory, scalable microservices, and functional programming.",
+    "avatarUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-go", "level": "Expert", "years": 6 },
+      { "techId": "tech-rust", "level": "Intermediate", "years": 2 },
+      { "techId": "tech-docker", "level": "Expert", "years": 7 },
+      { "techId": "tech-k8s", "level": "Expert", "years": 5 },
+      { "techId": "tech-cogodb", "level": "Intermediate", "years": 2 },
+      { "techId": "tech-postgres", "level": "Expert", "years": 8 }
+    ]
+  },
+  {
+    "id": "dev-bob",
+    "name": "Priya Patel",
+    "title": "Senior Frontend Engineer",
+    "email": "priya.patel@devgraph.in",
+    "location": "Pune, Maharashtra",
+    "bio": "Product-minded UI developer who loves CSS, interactive data visualizations, and building accessible, user-friendly experiences for Indian enterprises.",
+    "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-react", "level": "Expert", "years": 7 },
+      { "techId": "tech-typescript", "level": "Expert", "years": 5 },
+      { "techId": "tech-vue", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-nodejs", "level": "Intermediate", "years": 4 }
+    ]
+  },
+  {
+    "id": "dev-chloe",
+    "name": "Rohan Das",
+    "title": "Full Stack Engineer",
+    "email": "rohan.das@devgraph.in",
+    "location": "Kolkata, West Bengal",
+    "bio": "Generalist developer. Enjoys building web applications from scratch, tweaking database queries, and designing intuitive RESTful APIs.",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-react", "level": "Expert", "years": 4 },
+      { "techId": "tech-typescript", "level": "Expert", "years": 4 },
+      { "techId": "tech-nodejs", "level": "Expert", "years": 5 },
+      { "techId": "tech-postgres", "level": "Expert", "years": 5 },
+      { "techId": "tech-redis", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-docker", "level": "Intermediate", "years": 3 }
+    ]
+  },
+  {
+    "id": "dev-david",
+    "name": "Aditi Rao",
+    "title": "Backend & Database Specialist",
+    "email": "aditi.rao@devgraph.in",
+    "location": "Hyderabad, Telangana",
+    "bio": "Database administrator turned software engineer. Specializes in SQL/NoSQL performance tuning, graph models, and ETL pipelines in Fintech.",
+    "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-python", "level": "Expert", "years": 8 },
+      { "techId": "tech-postgres", "level": "Expert", "years": 10 },
+      { "techId": "tech-cogodb", "level": "Expert", "years": 3 },
+      { "techId": "tech-redis", "level": "Expert", "years": 6 },
+      { "techId": "tech-aws", "level": "Intermediate", "years": 4 }
+    ]
+  },
+  {
+    "id": "dev-elena",
+    "name": "Vikram Malhotra",
+    "title": "DevOps & Infrastructure Lead",
+    "email": "vikram.m@devgraph.in",
+    "location": "Noida, Uttar Pradesh",
+    "bio": "Automating containerized pipelines and cloud deployments. Container orchestration fan and latency hunter.",
+    "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-docker", "level": "Expert", "years": 8 },
+      { "techId": "tech-k8s", "level": "Expert", "years": 6 },
+      { "techId": "tech-aws", "level": "Expert", "years": 7 },
+      { "techId": "tech-python", "level": "Expert", "years": 6 },
+      { "techId": "tech-go", "level": "Intermediate", "years": 3 }
+    ]
+  },
+  {
+    "id": "dev-faisal",
+    "name": "Ananya Nair",
+    "title": "Junior Full Stack Developer",
+    "email": "ananya.n@devgraph.in",
+    "location": "Kochi, Kerala",
+    "bio": "Bootcamp graduate with a passion for learning React and Node.js. Eager to contribute to open-source and collaborate on local tech projects.",
+    "avatarUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-react", "level": "Intermediate", "years": 2 },
+      { "techId": "tech-typescript", "level": "Beginner", "years": 1 },
+      { "techId": "tech-nodejs", "level": "Intermediate", "years": 2 },
+      { "techId": "tech-postgres", "level": "Beginner", "years": 1 }
+    ]
+  },
+  {
+    "id": "dev-george",
+    "name": "Sanjay Mehta",
+    "title": "Senior Java Developer",
+    "email": "sanjay.m@devgraph.in",
+    "location": "Mumbai, Maharashtra",
+    "bio": "Enterprise Java specialist with deep experience in Spring Boot, query optimization, and legacy banking system migrations.",
+    "avatarUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-postgres", "level": "Expert", "years": 7 },
+      { "techId": "tech-docker", "level": "Intermediate", "years": 4 },
+      { "techId": "tech-aws", "level": "Intermediate", "years": 3 }
+    ]
+  },
+  {
+    "id": "dev-hannah",
+    "name": "Deepika Iyer",
+    "title": "Data Engineer",
+    "email": "deepika.i@devgraph.in",
+    "location": "Chennai, Tamil Nadu",
+    "bio": "Focuses on raw data parsing pipelines, warehousing systems, and designing resilient relational database schemas.",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-python", "level": "Expert", "years": 5 },
+      { "techId": "tech-postgres", "level": "Expert", "years": 6 },
+      { "techId": "tech-redis", "level": "Intermediate", "years": 2 }
+    ]
+  },
+  {
+    "id": "dev-ian",
+    "name": "Kabir Sen",
+    "title": "Systems Programmer",
+    "email": "kabir.s@devgraph.in",
+    "location": "Gurugram, Haryana",
+    "bio": "Low-level system architect. Lover of compiler design, assembly mappings, memory management, and Rust safety guarantees.",
+    "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-rust", "level": "Expert", "years": 5 },
+      { "techId": "tech-go", "level": "Expert", "years": 4 },
+      { "techId": "tech-docker", "level": "Intermediate", "years": 4 }
+    ]
+  },
+  {
+    "id": "dev-julia",
+    "name": "Meera Joshi",
+    "title": "Frontend Architect",
+    "email": "meera.j@devgraph.in",
+    "location": "Ahmedabad, Gujarat",
+    "bio": "Creates reusable design token systems, performance optimizes React render trees, and guides Indian SaaS product UX.",
+    "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-react", "level": "Expert", "years": 6 },
+      { "techId": "tech-typescript", "level": "Expert", "years": 5 },
+      { "techId": "tech-vue", "level": "Expert", "years": 4 }
+    ]
+  },
+  {
+    "id": "dev-kevin",
+    "name": "Arjun Reddy",
+    "title": "SecOps Consultant",
+    "email": "arjun.r@devgraph.in",
+    "location": "Visakhapatnam, Andhra Pradesh",
+    "bio": "Advises cloud startups on Kubernetes orchestration security, dependency firewalls, and token-based secret management.",
+    "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-aws", "level": "Expert", "years": 6 },
+      { "techId": "tech-docker", "level": "Expert", "years": 6 },
+      { "techId": "tech-k8s", "level": "Expert", "years": 4 }
+    ]
+  },
+  {
+    "id": "dev-lisa",
+    "name": "Neha Gupta",
+    "title": "ML Engineer",
+    "email": "neha.g@devgraph.in",
+    "location": "Delhi, NCR",
+    "bio": "Builds recommendation models, mathematical algorithms, data-cleaning systems, and python wrappers for custom graph computations.",
+    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-python", "level": "Expert", "years": 5 },
+      { "techId": "tech-redis", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-cogodb", "level": "Beginner", "years": 1 }
+    ]
+  },
+  {
+    "id": "dev-manoj",
+    "name": "Manoj Kumar",
+    "title": "Principal Security Architect",
+    "email": "manoj.k@devgraph.in",
+    "location": "Bengaluru, Karnataka",
+    "bio": "DevSecOps pioneer. Advises banking and government sectors on zero-trust architectures and cloud security validations.",
+    "avatarUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-postgres", "level": "Expert", "years": 12 },
+      { "techId": "tech-aws", "level": "Expert", "years": 8 },
+      { "techId": "tech-docker", "level": "Expert", "years": 7 }
+    ]
+  },
+  {
+    "id": "dev-nikhil",
+    "name": "Nikhil Gupta",
+    "title": "Senior Android Developer",
+    "email": "nikhil.g@devgraph.in",
+    "location": "Pune, Maharashtra",
+    "bio": "Builds responsive Android applications, designs custom UI canvases, and loves debugging memory leaks and local DB sync states.",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-typescript", "level": "Intermediate", "years": 4 },
+      { "techId": "tech-react", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-redis", "level": "Beginner", "years": 1 }
+    ]
+  },
+  {
+    "id": "dev-oliver",
+    "name": "Omkar Kulkarni",
+    "title": "Systems QA Engineer",
+    "email": "omkar.k@devgraph.in",
+    "location": "Nagpur, Maharashtra",
+    "bio": "Automates test pipelines, writes load-testing script configurations, and monitors latency across server setups.",
+    "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-python", "level": "Expert", "years": 6 },
+      { "techId": "tech-docker", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-aws", "level": "Intermediate", "years": 3 }
+    ]
+  },
+  {
+    "id": "dev-pranav",
+    "name": "Pranav Shah",
+    "title": "Backend Engineer",
+    "email": "pranav.s@devgraph.in",
+    "location": "Vadodara, Gujarat",
+    "bio": "Focuses on building asynchronous message queues, pub-sub microservices, and setting up high-availability databases.",
+    "avatarUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-nodejs", "level": "Expert", "years": 6 },
+      { "techId": "tech-redis", "level": "Expert", "years": 5 },
+      { "techId": "tech-go", "level": "Intermediate", "years": 3 }
+    ]
+  },
+  {
+    "id": "dev-rupa",
+    "name": "Rupa Roy",
+    "title": "Data Analytics Manager",
+    "email": "rupa.r@devgraph.in",
+    "location": "Kolkata, West Bengal",
+    "bio": "Guides Business Intelligence stacks, models telemetry logs, and designs interactive customer conversion charts.",
+    "avatarUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-postgres", "level": "Expert", "years": 7 },
+      { "techId": "tech-python", "level": "Expert", "years": 6 },
+      { "techId": "tech-cogodb", "level": "Beginner", "years": 1 }
+    ]
+  },
+  {
+    "id": "dev-sheetal",
+    "name": "Sheetal Deshmukh",
+    "title": "Frontend Engineer",
+    "email": "sheetal.d@devgraph.in",
+    "location": "Mumbai, Maharashtra",
+    "bio": "Builds beautiful pixel-perfect landing grids, accessibility-compliant web forms, and highly optimized responsive components.",
+    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+    "skills": [
+      { "techId": "tech-react", "level": "Expert", "years": 5 },
+      { "techId": "tech-typescript", "level": "Intermediate", "years": 3 },
+      { "techId": "tech-vue", "level": "Intermediate", "years": 2 }
+    ]
+  }
+]

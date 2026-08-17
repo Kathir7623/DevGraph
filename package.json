@@ -1,0 +1,32 @@
+{
+  "name": "devgraph",
+  "version": "1.0.0",
+  "description": "DevGraph - Developer Connection & Skills Network Explorer",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "node database/seed/seed.js",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "start": "node server/src/server.js"
+  },
+  "keywords": [
+    "cogodb",
+    "graph-database",
+    "neo4j",
+    "express",
+    "react",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "neo4j-driver": "^6.2.0"
+  }
+}

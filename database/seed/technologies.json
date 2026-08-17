@@ -1,0 +1,80 @@
+[
+  {
+    "id": "tech-react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building user interfaces"
+  },
+  {
+    "id": "tech-typescript",
+    "name": "TypeScript",
+    "category": "Frontend",
+    "description": "Typed superset of JavaScript that compiles to plain JavaScript"
+  },
+  {
+    "id": "tech-vue",
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "Progressive JavaScript framework for building user interfaces"
+  },
+  {
+    "id": "tech-nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "JavaScript runtime built on Chrome's V8 engine"
+  },
+  {
+    "id": "tech-python",
+    "name": "Python",
+    "category": "Backend",
+    "description": "High-level programming language known for readability and versatility"
+  },
+  {
+    "id": "tech-go",
+    "name": "Go",
+    "category": "Backend",
+    "description": "Open-source programming language designed for fast, reliable concurrency"
+  },
+  {
+    "id": "tech-rust",
+    "name": "Rust",
+    "category": "Backend",
+    "description": "Systems programming language focused on safety, speed, and concurrency"
+  },
+  {
+    "id": "tech-postgres",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "Powerful, open-source object-relational database system"
+  },
+  {
+    "id": "tech-cogodb",
+    "name": "CognoDB",
+    "category": "Database",
+    "description": "Managed high-performance graph database speaking openCypher"
+  },
+  {
+    "id": "tech-redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "In-memory data structure store used as database, cache, and message broker"
+  },
+  {
+    "id": "tech-docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "Platform for developing, shipping, and running applications in containers"
+  },
+  {
+    "id": "tech-k8s",
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "Open-source system for automating deployment, scaling, and management of containerized applications"
+  },
+  {
+    "id": "tech-aws",
+    "name": "AWS",
+    "category": "DevOps",
+    "description": "Comprehensive, evolving cloud computing platform provided by Amazon"
+  }
+]
