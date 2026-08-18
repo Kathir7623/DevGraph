@@ -33,7 +33,7 @@ export default function Navbar({ activePage, setActivePage, dbConnected }) {
       <div className="sidebar-footer">
         <div className={`db-status ${dbConnected ? 'connected' : 'disconnected'}`}>
           <div className="dot"></div>
-          <span>{dbConnected ? 'CognoDB Connected' : 'DB Disconnected'}</span>
+          <span>{dbConnected ? 'DevGraph Live' : 'DB Disconnected'}</span>
         </div>
       </div>
     </div>

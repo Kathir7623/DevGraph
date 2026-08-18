@@ -1,8 +1,6 @@
-const { getSession } = require('../config/database');
+﻿const { getSession, isLocalMode } = require('../config/database');
+const localGraphService = require('./localGraphService');
 
-/**
- * Helper to convert Neo4j Integer objects { low, high } into standard JS numbers.
- */
 function convertNeo4jInteger(val) {
   if (val === null || val === undefined) return val;
   if (typeof val === 'object' && val.low !== undefined) {
@@ -11,11 +9,14 @@ function convertNeo4jInteger(val) {
   return val;
 }
 
-/**
- * Get all developers with optional search and skill filtering.
- */
 async function getAllDevelopers(search = '', skillFilter = '') {
+  if (isLocalMode()) {
+    return localGraphService.getAllDevelopers(search, skillFilter);
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getAllDevelopers(search, skillFilter);
+  }
   try {
     const query = `
       MATCH (d:Developer)
@@ -50,16 +51,22 @@ async function getAllDevelopers(search = '', skillFilter = '') {
       }
       return dev;
     });
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getAllDevelopers(search, skillFilter);
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Get a specific developer's profile by ID.
- */
 async function getDeveloperById(id) {
+  if (isLocalMode()) {
+    return localGraphService.getDeveloperById(id);
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getDeveloperById(id);
+  }
   try {
     const query = `
       MATCH (d:Developer {id: $id})
@@ -98,21 +105,23 @@ async function getDeveloperById(id) {
       }));
     }
     return dev;
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getDeveloperById(id);
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Get recommendations for a specific developer.
- * Includes:
- * 1. Skills to learn (technologies used in projects they worked on, but they don't know).
- * 2. Collaborators of collaborators (2-hop separation) they haven't directly worked with yet.
- */
 async function getDeveloperRecommendations(id) {
+  if (isLocalMode()) {
+    return localGraphService.getDeveloperRecommendations(id);
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getDeveloperRecommendations(id);
+  }
   try {
-    // 1. Skill recommendations: Technologies used on projects they worked on, but don't KNOWS.
     const skillRecQuery = `
       MATCH (d:Developer {id: $id})-[:WORKED_ON]->(p:Project)-[:USES]->(t:Technology)
       WHERE NOT (d)-[:KNOWS]->(t)
@@ -121,8 +130,6 @@ async function getDeveloperRecommendations(id) {
       ORDER BY t.exposureCount DESC
     `;
 
-    // 2. Collaborator recommendations: Friends of friends. People who have worked on projects with
-    // people they worked with, but who they have not directly shared a project with.
     const colleagueRecQuery = `
       MATCH (d:Developer {id: $id})-[:WORKED_ON]->(:Project)<-[:WORKED_ON]-(colleague:Developer)
       MATCH (colleague)-[:WORKED_ON]->(p:Project)<-[:WORKED_ON]-(recommendation:Developer)
@@ -153,16 +160,22 @@ async function getDeveloperRecommendations(id) {
         return dev;
       })
     };
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getDeveloperRecommendations(id);
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Get all projects.
- */
 async function getAllProjects() {
+  if (isLocalMode()) {
+    return localGraphService.getAllProjects();
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getAllProjects();
+  }
   try {
     const query = `
       MATCH (p:Project)
@@ -175,16 +188,22 @@ async function getAllProjects() {
     `;
     const result = await session.run(query);
     return result.records.map(r => r.get('p'));
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getAllProjects();
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Get all technologies, grouped by category or with counts of developers who know them.
- */
 async function getAllTechnologies() {
+  if (isLocalMode()) {
+    return localGraphService.getAllTechnologies();
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getAllTechnologies();
+  }
   try {
     const query = `
       MATCH (t:Technology)
@@ -201,8 +220,11 @@ async function getAllTechnologies() {
       }
       return tech;
     });
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getAllTechnologies();
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 

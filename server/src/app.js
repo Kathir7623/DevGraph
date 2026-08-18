@@ -22,9 +22,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// Mount routes
+// Mount routes (both /api/* and root paths for Vercel serverless compatibility)
 app.use('/api/developers', developerRoutes);
 app.use('/api/graph', graphRoutes);
+app.use('/developers', developerRoutes);
+app.use('/graph', graphRoutes);
 
 const path = require('path');
 

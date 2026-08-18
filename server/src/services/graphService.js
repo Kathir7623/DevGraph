@@ -1,19 +1,21 @@
-const { getSession } = require('../config/database');
+﻿const { getSession, isLocalMode } = require('../config/database');
+const localGraphService = require('./localGraphService');
 
-/**
- * Retrieves all nodes and edges in the graph to visualize the network.
- */
 async function getFullGraph() {
+  if (isLocalMode()) {
+    return localGraphService.getFullGraph();
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getFullGraph();
+  }
   try {
-    // 1. Get all nodes
     const nodesQuery = `
       MATCH (n)
       RETURN n.id AS id, labels(n)[0] AS type, n.name AS name, 
              n.title AS title, n.category AS category, n.status AS status, n.avatarUrl AS avatarUrl
     `;
 
-    // 2. Get all relationships
     const linksQuery = `
       MATCH (n)-[r]->(m)
       RETURN n.id AS source, m.id AS target, type(r) AS type
@@ -37,17 +39,22 @@ async function getFullGraph() {
     }));
 
     return { nodes, links };
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getFullGraph();
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Finds the shortest collaboration path between two developers (multi-hop).
- * Returns the nodes and edges along that path.
- */
 async function getShortestPath(devId1, devId2) {
+  if (isLocalMode()) {
+    return localGraphService.getShortestPath(devId1, devId2);
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getShortestPath(devId1, devId2);
+  }
   try {
     const query = `
       MATCH path = shortestPath((d1:Developer {id: $devId1})-[:WORKED_ON*..10]-(d2:Developer {id: $devId2}))
@@ -64,8 +71,7 @@ async function getShortestPath(devId1, devId2) {
     const links = [];
     const seenNodes = new Set();
 
-    // Parse nodes in the path
-    path.segments.forEach((segment, index) => {
+    path.segments.forEach((segment) => {
       const startNode = segment.start;
       const endNode = segment.end;
       const rel = segment.relationship;
@@ -99,16 +105,22 @@ async function getShortestPath(devId1, devId2) {
     });
 
     return { nodes, links };
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getShortestPath(devId1, devId2);
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
-/**
- * Get system statistics (total node/edge counts).
- */
 async function getStatistics() {
+  if (isLocalMode()) {
+    return localGraphService.getStatistics();
+  }
   const session = getSession();
+  if (!session) {
+    return localGraphService.getStatistics();
+  }
   try {
     const query = `
       MATCH (d:Developer) WITH count(d) AS devCount
@@ -129,8 +141,11 @@ async function getStatistics() {
       projects: record.get('projCount').toNumber(),
       relationships: record.get('relCount').toNumber()
     };
+  } catch (err) {
+    console.warn('Neo4j query error, falling back to local:', err.message);
+    return localGraphService.getStatistics();
   } finally {
-    await session.close();
+    if (session) await session.close();
   }
 }
 
