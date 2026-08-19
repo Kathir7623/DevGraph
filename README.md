@@ -1,8 +1,8 @@
 # DevGraph: Developer Connection & Skills Network Explorer
 
 ### 🔗 Project Deliverables
-* **Hosted Live Demo**: [https://dev-graph-tawny.vercel.app/](https://dev-graph-tawny.vercel.app/)
-* **Screen Recording Walkthrough**: [Watch Walkthrough Video](https://vimeo.com/your-walkthrough-video)
+* **Hosted Live Demo**: [https://dev-graph-silk.vercel.app/](https://dev-graph-silk.vercel.app/)
+* **Screen Recording Walkthrough**: [Watch Walkthrough Video](https://drive.google.com/file/d/1zuIKsHKGNJ2_RhJVTI4ETk95tZ3W6Vgi/view?usp=drive_link)
 
 DevGraph is a full-stack web application that maps, explores, and visualizes developer teams, their skill sets, and their shared project histories. Built on top of **CognoDB Cloud**, a managed graph database speaking openCypher, DevGraph allows organizations to query complex social networks, compute degrees of separation between developers, and make graph-powered project/skill recommendations.
 
